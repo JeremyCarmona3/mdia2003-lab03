@@ -13,7 +13,6 @@
 
 html {
   color: #222;
-  font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1em;
   line-height: 1.4;
 }
@@ -100,34 +99,56 @@ h1 {
   text-align: center;
 }
 
-p {
+p, a {
   padding: 1rem;
+  font-family: Ubuntu, Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400; 
 }
 
 div, section, footer, header {
-  border: 1px solid #ccc;
-  margin: 0.5em;
+    /* border: 1px solid #ccc;
+    margin: 0.5em; */
+}
+
+.row {
+  display: grid;
 }
 
 .col {
-  background-color: rgb(218, 190, 153);
+  /* background-color: rgb(218, 190, 153);
+  margin: 1rem; */
 }
 
 .heading {
   text-align: center;
+  font-family: Ubuntu, Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+}
+
+.navbar {
+  height: auto;
 }
 
 /*Smallonly*/
 @media screen and (max-width: 39.9375em) {
-  
+  .s-hide {
+    display: none;
+  }
+
+  .hamburger_menu {
+    max-width: 3rem;
+    transform: translate(900%, 200%);
+  }
 }
 /*Mediumandup*/
 @media screen and (min-width: 40em) {
   .row {
-    display: grid;
     width: 85vw;
     max-width: 70rem;
     margin: 0 auto;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    margin: 0 auto 3  rem auto;
   }
 
   .m-col-2 {
@@ -142,14 +163,29 @@ div, section, footer, header {
   .m-col-5 {
     grid-template-columns: repeat(5, 1fr);
   }
+  .m-1-2 {
+    grid-template-columns: 1fr 2fr;
+  }
 
   .span-full {
     grid-column-start: 1;
     grid-column-end: -1;
   }
+
+  .m-hide {
+    display: none;
+  }
+
+  .page_slider img{
+    height: 30vh;
+  } 
 }
 /*Mediumonly*/
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .special-project {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
 }
 /*Largeandup*/
 @media screen and (min-width: 64em) {
@@ -168,6 +204,14 @@ div, section, footer, header {
   .l-col-6 {
     grid-template-columns: repeat(6, 1fr);
   }
+
+  .l-hide {
+    display: none;
+  }
+
+  .page_slider img{
+    height: 50vh;
+  } 
 }
 /*Largeonly*/
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {
@@ -184,7 +228,13 @@ div, section, footer, header {
    THEME
    ========================================================================== */
 
-
+  .page_slider {
+    background-color: #999; 
+  }
+  .page_footer {
+    background-color: #222;
+    color: #EEE;
+  }
 
 /* ==========================================================================
    Helper classes

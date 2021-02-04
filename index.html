@@ -16,6 +16,8 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -24,13 +26,23 @@
 
 <body class="page page-home">
   <header class="page_header">
-    <div class="row"></div>
+    <div class="row m-1-2">
+      <nav class="mobile-nav m-hide l-hide">
+        <img class="hamburger_menu" src="img/menu.PNG" alt="menu placeholder">
+      </nav>
+      <div class="col">
+        <img class="logo" src="img/logo.PNG" alt="logo placeholder">
+      </div>
+      <nav class="col s-hide  ">
+        <img class="navbar" src="img/navbar.PNG" alt="navbar placeholder">
+      </div>
+    </div>
   </header>
 
-  <div class="page_slider">
+  <div class="page_slider s-hide">
     <div class="row">
       <div class="col">
-        <img src="img/placeholder.svg" alt="slider placeholder">
+        <img src="img/slider.PNG" alt="slider placeholder">
       </div>
     </div>
   </div>
@@ -86,10 +98,10 @@
       </div>
     </div>
     <div class="row m-col-2 l-col-3">
-      <div class="col">
+      <div class="col special-project">
         <figure class="project">
           <figcaption class="project_caption">
-            <img src="img/placeholder.svg" alt="news placeholder">
+            <img src="img/sample.PNG" alt="news placeholder">
             <h3 class="heading">Project Title</h3>
           </figcaption>
         </figure>
@@ -97,7 +109,7 @@
       <div class="col">
         <figure class="project">
           <figcaption class="project_caption">
-            <img src="img/placeholder.svg" alt="news placeholder">
+            <img src="img/sample.PNG" alt="news placeholder">
             <h3 class="heading">Project Title</h3>
           </figcaption>
         </figure>
@@ -105,7 +117,7 @@
       <div class="col">
         <figure class="project">
           <figcaption class="project_caption">
-            <img src="img/placeholder.svg" alt="news placeholder">
+            <img src="img/sample.PNG" alt="news placeholder">
             <h3 class="heading">Project Title</h3>
           </figcaption>
         </figure>
@@ -128,7 +140,7 @@
       <div class="col">
         <figure class="project">
           <figcaption class="project_caption">
-            <img src="img/placeholder.svg" alt="projects placeholder">
+            <img src="img/sample.PNG" alt="projects placeholder">
             <h3 class="heading">Project Title</h3>
           </figcaption>
         </figure>
@@ -136,7 +148,7 @@
       <div class="col">
         <figure class="project">
           <figcaption class="project_caption">
-            <img src="img/placeholder.svg" alt="projects placeholder">
+            <img src="img/sample.PNG" alt="projects placeholder">
             <h3 class="heading">Project Title</h3>
           </figcaption>
         </figure>
@@ -144,7 +156,7 @@
       <div class="col">
         <figure class="project">
           <figcaption class="project_caption">
-            <img src="img/placeholder.svg" alt="projects placeholder">
+            <img src="img/sample.PNG" alt="projects placeholder">
             <h3 class="heading">Project Title</h3>
           </figcaption>
         </figure>
@@ -152,7 +164,7 @@
       <div class="col">
         <figure class="project">
           <figcaption class="project_caption">
-            <img src="img/placeholder.svg" alt="projects placeholder">
+            <img src="img/sample.PNG" alt="projects placeholder">
             <h3 class="heading">Project Title</h3>
           </figcaption>
         </figure>
@@ -160,7 +172,7 @@
       <div class="col">
         <figure class="project">
           <figcaption class="project_caption">
-            <img src="img/placeholder.svg" alt="projects placeholder">
+            <img src="img/sample.PNG" alt="projects placeholder">
             <h3 class="heading">Project Title</h3>
           </figcaption>
         </figure>
@@ -168,7 +180,7 @@
       <div class="col">
         <figure class="project">
           <figcaption class="project_caption">
-            <img src="img/placeholder.svg" alt="projects placeholder">
+            <img src="img/sample.PNG  " alt="projects placeholder">
             <h3 class="heading">Project Title</h3>
           </figcaption>
         </figure>
@@ -176,7 +188,7 @@
     </div>
   </section>
 
-  <section class="thingsOfAbove">
+  <section class="thingsOfAbove s-hide">
     <div class="row">
       <div class="col">
         <h2 class="heading">
@@ -197,22 +209,22 @@
     </div>
   </section>
 
-  <section class="sponsors">
+  <section class="sponsors s-hide">
     <div class="row m-col-5">
       <div class="col">
-        <img src="img/placeholder.svg" alt="sponsors placeholder">
+        <img src="img/sponsor.PNG" alt="sponsors placeholder">
       </div>
       <div class="col">
-        <img src="img/placeholder.svg" alt="sponsors placeholder">
+        <img src="img/sponsor.PNG" alt="sponsors placeholder">
       </div>
       <div class="col">
-        <img src="img/placeholder.svg" alt="sponsors placeholder">
+        <img src="img/sponsor.PNG" alt="sponsors placeholder">
       </div>
       <div class="col">
-        <img src="img/placeholder.svg" alt="sponsors placeholder">
+        <img src="img/sponsor.PNG" alt="sponsors placeholder">
       </div>
       <div class="col">
-        <img src="img/placeholder.svg" alt="sponsors placeholder">
+        <img src="img/sponsor.PNG" alt="sponsors placeholder">
       </div>
     </div>
   </section>
@@ -225,17 +237,21 @@
         </h3>
         <p>Peewee has over 10 years experience in the industry. He is our Creative Director, digital designer, web designer and front-end developer. He is also pretty good with a sketch-book. Before starting the company Peewee worked as a designer and studio manager for a design house who boasted a number of big name clients.</p>
       </div>
-      <div class="col">
-        <h4>About Us</h4>
+      <div class="col s-hide">
+        <h4 class="heading">About Us</h4>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      </div>
+      <div class="col s-hide">
+        <h4 class="heading">Flickr Photos</h4>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
       </div>
       <div class="col">
-        <h4>Flickr Photos</h4>
+        <h4 class="heading">Recent Tweets</h4>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
       </div>
-      <div class="col">
-        <h4>Recent Photos</h4>
-      </div>
-      <div class="col">
-        <h4>Newsletter</h4>
+      <div class="col s-hide">
+        <h4 class="heading">Newsletter</h4>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>  
       </div>
     </div>
   </footer>
